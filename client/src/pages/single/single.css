@@ -1,0 +1,10 @@
+.single {
+  display: flex;
+}
+
+/* media query */
+@media (max-width: 765px) {  
+  .single {
+    display: block;
+  }
+}

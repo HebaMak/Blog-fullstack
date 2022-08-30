@@ -1,0 +1,50 @@
+:root {
+  --dark-red: #e90707;
+  --light-green: rgb(216, 124, 101);
+  --dark-color: #171717;
+}
+
+.about-page {
+  min-height: 100vh;
+}
+
+.aboutpage-content {
+  width: 90%;
+  margin: auto;
+}
+
+.about-page h1 {
+  margin: 20px 0;
+}
+
+.about-page .intro {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.about-page .intro .blog {
+  color: var(--dark-red);
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.about-page .intro a {
+  text-decoration: none;
+  color: var(--dark-red);
+  font-size: 20px;
+}
+
+.about-page h3 {
+  margin: 40px 0 15px;
+}
+
+.about-page ol li ,
+.about-page ul li {
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.about-page h4 {
+  margin: 30px 0;
+}

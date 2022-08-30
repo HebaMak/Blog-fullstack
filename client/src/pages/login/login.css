@@ -1,0 +1,116 @@
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)) ,
+    url('https://res.cloudinary.com/hapiii/image/upload/v1647069686/nstiaosc98y5ypvns3ot.jpg');
+  background-size: cover;
+}
+
+.loginTitle {
+  font-size: 50px;
+}
+
+.loginForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.loginForm > label {
+  margin: 10px 0;
+}
+
+.loginInput {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.loginButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: lightcoral;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  transition: all .5s ease-in-out;
+}
+
+.loginButton:disabled {
+  cursor: not-allowed;
+  background-color: rgb(241, 173, 173);
+}
+
+.loginButton:hover {
+  background-color: rgb(226, 105, 105);
+}
+
+.loginRegisterButton {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: teal;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+}
+
+.loginRegisterButton a {
+    text-decoration: none;
+    color: inherit
+}
+
+.loginRegisterButton:hover {
+  background-color: rgb(1, 114, 114);
+}
+
+/* media query */
+@media (max-width:  575px) {  
+  .loginForm {
+    width: 60%;
+  }
+  .loginRegisterButton {
+    top: 180px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 765px) {
+  .loginForm {
+    width: 50%;
+  }
+  .loginRegisterButton {
+    top: 180px;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) { 
+  .loginForm {
+    width: 40%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .loginForm {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .loginForm {
+    width: 25%;
+  }
+}

@@ -1,0 +1,120 @@
+.register {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.57 )),
+    url("https://res.cloudinary.com/hapiii/image/upload/v1647071507/zgch4apxtyr8mpi9omsc.jpg");
+  background-size: cover;
+}
+
+.registerTitle {
+  font-size: 50px;
+}
+
+.registerForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.registerForm > label {
+  margin: 10px 0;
+}
+
+.registerInput {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.registerInput:focus {
+  outline: none;
+}
+
+.registerButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.registerButton:hover {
+  background-color: rgb(1, 114, 114);
+}
+
+.registerLoginButton {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: lightcoral;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.registerLoginButton a {
+  text-decoration: none;
+  color: inherit
+}
+
+.registerLoginButton:hover {
+  background-color: rgb(226, 105, 105);
+}
+
+.register .alertError {
+  color: red;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 20px;
+  border: 1px solid red;
+  padding: 7px 10px;
+  border-radius: 7px;
+  background-color: rgb(238, 210, 210);
+}
+
+/* media query */
+@media (max-width:  575px) {  
+  .registerForm  {
+    width: 60%;
+  }
+  .registerLoginButton  {
+    top: 180px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 765px) {
+  .registerForm  {
+    width: 50%;
+  }
+  .registerLoginButton {
+    top: 180px;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) { 
+  .registerForm  {
+    width: 40%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .registerForm  {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .registerForm  {
+    width: 25%;
+  }
+}

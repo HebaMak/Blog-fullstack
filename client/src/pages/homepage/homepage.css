@@ -1,0 +1,10 @@
+.home {
+  display: flex;
+}
+
+/* media query  */
+@media (max-width: 765px) {  
+  .home {
+    display: block;
+  }
+}

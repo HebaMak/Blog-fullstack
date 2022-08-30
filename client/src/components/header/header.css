@@ -1,0 +1,38 @@
+.header {
+  margin-top: 60px;
+}
+
+.headerTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lora", serif;
+  color: #444;
+}
+
+.headerTitleSm {
+  font-size: 20px;
+}
+
+.headerTitleLg {
+  font-size: 100px;
+  z-index: 2;
+}
+
+.headerImg {
+  width: 100%;
+  height: 450px;
+  margin-top: -60px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* media query */
+@media (max-width: 765px) { 
+  .headerTitleLg {
+    font-size: 70px;
+  }
+  .headerImg {
+    margin-top: -45px;
+  }
+}

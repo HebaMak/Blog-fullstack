@@ -1,0 +1,170 @@
+.settings {
+  display: flex;
+  font-family: "Lora", serif;
+  width: 90%;
+  margin: auto;
+}
+
+.settingsWrapper {
+  flex: 9;
+  padding: 20px;
+}
+
+.settingsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settingsTitleUpdate {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: lightcoral;
+}
+
+.settingsTitleDelete {
+  color: red;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(243, 226, 226);
+  background-color: #fdfbfb;
+  transition: all .5s ease-in-out;
+}
+
+.settingsTitleDelete:hover {
+  border: 1px solid  red;
+  background-color:  red;
+  color:#fdfbfb;
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.settingsPP {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.settingsPP > img {
+  height: 70px;
+  width: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.settingsPPIcon {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  color: white;
+  background-color: lightcoral;
+  cursor: pointer;
+}
+
+.settingsPPButton:focus {
+  outline-style: none;
+}
+
+.settingsForm > label {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.settingsPPInput {
+  width: 30%;
+  display: none
+}
+
+.settingsForm > input {
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  width: 80%
+  
+}
+.settingsForm > input:focus {
+  outline: none;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.settingsSubmitButton {
+  align-self: center;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settingsSubmitButton:hover {
+  background-color: rgb(1, 114, 114);
+}
+
+.successUpdate {
+  color: green;
+  background-color: rgb(229, 247, 229);
+  font-size: 17px;
+  border: 1px solid rgb(186, 219, 186);
+  border-radius: 5px;
+  height: 40px;
+  width: 30%;
+  text-align: center;
+  line-height: 40px;
+  margin: 25px auto;
+  letter-spacing: .5px;
+}
+@media (max-width:  575px) { 
+  .settings {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .settingsTitleUpdate {
+    font-size: 24px;
+  }
+  .settingsTitleDelete {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 765px) {
+  .settings {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .settingsTitleUpdate {
+    font-size: 26px;
+  }
+  .settingsTitleDelete {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {  }
+
+@media (min-width: 992px) and (max-width: 1199px) { }
+
+@media (min-width: 1200px) {  }
